@@ -46,13 +46,27 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   Uncomment the <script> tag below when you're ready to add an interactive
   Google Map to your resume!
   -->
-  <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
   <meta name="viewport" content="width=device-width">
 </head>
-<body unresolved>
+<body> <!-- Removed the unresolved attribute as the HTML validator saw it as an error -->
+  <header> <!-- Contains code for the navigation menu at the top of the page -->
+        <div class="container">
+          <nav>
+            <ul class="navigation">
+                <li><a href="#workExperience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#mapDiv">Map and Tweets</a></li>
+                <li><a href="#letsConnect">Contact Me</a></li>
+            </ul>
+          </nav>
+        </div>
+  </header>
+
   <div id="main">
-    Hello world!   <!-- You'll be deleting this line in the course -->
+       <!-- You'll be deleting this line in the course -->
 
     <!--
     Everything from here to the <script> tag below is the skeleton of your
@@ -73,8 +87,13 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <div id="education" class='gray'>
       <h2>Education</h2>
     </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
+    <div id="finalSection"> <!-- Added a new div to align the map and twitter feed on the same line which is a change to the layout -->
+      <div id="mapDiv">
+        <h2>Where I've Lived and Worked</h2>
+      </div>
+      <div id="twitterFeed">
+        <h2>My Twitter Feed</h2>
+      </div>
     </div>
     <div id="letsConnect" class='dark-gray'>
       <h2 class='orange center-text'>Let's Connect</h2>

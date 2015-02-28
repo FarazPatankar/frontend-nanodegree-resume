@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #1199C3;
   line-height: 48px;
   display: inline;
 }
@@ -23,7 +23,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
+  color: #4D94FF;
   line-height: 29px;
   padding: 10px;
 }
@@ -31,7 +31,7 @@ h2 {
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000000;
+  color: #CC9900;
   line-height: 22px;
 }
 
@@ -117,6 +117,7 @@ a {
 /* TODO: Replace with image later */
 #header {
   background-color: #484848;
+  padding-top: 60px;
 }
 
 .flex-box {
@@ -164,10 +165,7 @@ img {
 
 span {
   padding: 5px;
-}
-
-#letsConnect {
-  text-align: center;
+  color: white;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -202,9 +200,13 @@ span {
 }
 
 #mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
+  height: 600px;
+  width: 50%;
+  float: left;
+}
+
+#letsConnect {
+  text-align: center;
 }
 
 @media only screen and (min-width: 750px) {
@@ -212,4 +214,37 @@ span {
   .biopic {
     display: block;
   }
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  color: #FFF;
+  background-color: #333;
+  z-index: 1; /* Defined z-index so that the navigation menu always stays on top */
+}
+
+.navigation li {
+  display: inline;
+  float: left;
+  position: relative;
+  top: 10px;
+  width: 15%;
+}
+
+.navigation li a {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: #CC9900;
+}
+
+.navigation a:hover {
+  color: #75A3D1;
+}
+
+.navigation li:first-child {
+  margin-left: 10%;
 }
