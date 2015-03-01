@@ -194,6 +194,7 @@ var projects = {
 //calling display function for project object
 projects.display();
 
+//Code to log click locations
 $(document).click(function(loc) {
     var x = loc.pageX
     var y = loc.pageY
@@ -201,12 +202,14 @@ $(document).click(function(loc) {
     logClicks(x, y)
 });
 
+//Adding the map to the page
 $("#mapDiv").append(googleMap);
 
+//Twitter feed as an added interactivity in an attempt to make the project Completely Udacious
 var twitterFeed = {
     display: function twitterDisplay() {
         var twitterFeedDiv = '<a class="twitter-timeline" href="https://twitter.com/FarazPatankar13" data-widget-id="570319524751093760">Tweets by @FarazPatankar13/a>' + '<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?' + "'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+" + '"://platform.twitter.com/widgets.js' + '";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>';
         $("#twitterFeed").append(twitterFeedDiv);
     }
-}
+};
 twitterFeed.display();
